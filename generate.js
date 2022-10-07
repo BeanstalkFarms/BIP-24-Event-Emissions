@@ -4,7 +4,7 @@ const readLine = require('readline');
 
 const beanstalkAbi = require('./Beanstalk.json');
 const BEANSTALK_ADDRESS = '0xC1E088fC1323b20BCBee9bd1B9fC9546db5624C5' // Beanstalk's address
-const RPC_URL = '<RPC_URL>'
+const RPC_URL = '<RPC_URL>' // RPC URL
 var web3 = new Web3(new Web3.providers.HttpProvider(RPC_URL));
 const beanstalk = new web3.eth.Contract(beanstalkAbi, BEANSTALK_ADDRESS);
 
